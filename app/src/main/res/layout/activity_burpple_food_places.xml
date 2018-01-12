@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_food_images"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:fitsSystemWindows="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_medium_3"
+                    android:shadowColor="@color/black_full"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="burpple"
+                    android:textColor="@color/white_full"
+                    android:textSize="@dimen/text_heading_2x"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/round_border"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:drawableStart="@drawable/ic_search_gray_32dp"
+                    android:hint="Search e.g. Japanese in Orchard"
+                    android:padding="@dimen/margin_medium_2"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_featured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:text="@string/lbl_featured"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_regular" />
+
+                <TextView
+                    android:id="@+id/lbl_promotions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/lbl_featured"
+                    android:layout_below="@id/lbl_featured"
+                    android:text="@string/lbl_promotions"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/btn_see_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/lbl_featured"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/btn_see_more"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_promotions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_promotions"
+                    android:layout_marginTop="@dimen/margin_xlarge" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_latest_burpple_guides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:text="@string/lbl_latest"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_regular" />
+
+                <TextView
+                    android:id="@+id/lbl_burpple_guides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/lbl_latest_burpple_guides"
+                    android:layout_below="@id/lbl_latest_burpple_guides"
+                    android:text="@string/lbl_burpple_guides"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/btn_burpple_guides_see_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/lbl_latest_burpple_guides"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/btn_see_more"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_burpple_guides"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_burpple_guides"
+                    android:layout_marginTop="@dimen/margin_xlarge" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_latest_new_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:text="@string/lbl_latest"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_regular" />
+
+                <TextView
+                    android:id="@+id/lbl_new_trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/lbl_latest_new_trending"
+                    android:layout_below="@id/lbl_latest_new_trending"
+                    android:text="@string/lbl_new_and_trending"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_new_trending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_new_trending"
+                    android:layout_marginTop="@dimen/margin_xlarge" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

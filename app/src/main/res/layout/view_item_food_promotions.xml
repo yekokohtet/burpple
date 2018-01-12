@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    card_view:cardElevation="@dimen/margin_small"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:background="@color/black_full">
+
+        <ImageView
+            android:id="@+id/iv_food_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/p1" />
+
+        <TextView
+            android:id="@+id/tv_burpple_exclusive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_round_accent"
+            android:padding="4dp"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/txt_burpple_exclusive"
+            android:textAllCaps="true"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tv_food_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_burpple_exclusive"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:padding="4dp"
+            android:shadowColor="@color/black_full"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="1-for 1 Chilli Pomelo Crab Xiao Long Bao"
+            android:textColor="@color/white_full"
+            android:textSize="@dimen/text_heading_1x" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
