@@ -8,4 +8,6 @@
     <string name="lbl_burpple_guides">Burpple Guides</string>
     <string name="txt_burpple_exclusive">Burpple Exclusive</string>
     <string name="lbl_new_and_trending"><![CDATA[New & Trending]]></string>
+    <string name="lbl_explore_neighbourhoods">Explore Neighbourhoods</string>
+    <string name="lbl_explore_categories">Explore Categories</string>
 </resources>
