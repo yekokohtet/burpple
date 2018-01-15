@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="@dimen/margin_small"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_trending_venues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:text="@string/lbl_trending_venues"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/primary" />
+
+        <ImageView
+            android:id="@+id/food_item_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/lbl_trending_venues"
+            android:layout_below="@id/lbl_trending_venues"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/bg_round_white_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b6" />
+
+        <TextView
+            android:id="@+id/food_shop_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/food_item_1"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toRightOf="@id/food_item_1"
+            android:text="District Sushi"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/distance_shop_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/food_shop_1"
+            android:layout_below="@id/food_shop_1"
+            android:text="Far away"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <ImageView
+            android:id="@+id/food_item_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/lbl_trending_venues"
+            android:layout_below="@id/food_item_1"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/bg_round_white_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b7" />
+
+        <TextView
+            android:id="@+id/food_shop_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/food_item_2"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toRightOf="@id/food_item_2"
+            android:text="OMU"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/distance_shop_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/food_shop_2"
+            android:layout_below="@id/food_shop_2"
+            android:text="Far away"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <ImageView
+            android:id="@+id/food_item_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/lbl_trending_venues"
+            android:layout_below="@id/food_item_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/bg_round_white_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/b8" />
+
+        <TextView
+            android:id="@+id/food_shop_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/food_item_3"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toRightOf="@id/food_item_3"
+            android:text="Tokyo Milk Ch..."
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/distance_shop_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/food_shop_3"
+            android:layout_below="@id/food_shop_3"
+            android:text="Far away"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/food_item_3"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/lbl_explore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/lbl_trending_venues"
+            android:layout_below="@id/divider"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:text="Explore"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
