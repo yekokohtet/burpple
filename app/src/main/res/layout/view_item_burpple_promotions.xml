@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    card_view:cardElevation="@dimen/margin_small"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black_full"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/iv_burpple_promotion_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.7"
+                android:scaleType="centerCrop"
+                android:src="@drawable/p1" />
+
+            <TextView
+                android:id="@+id/lbl_burpple_exclusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_round_accent"
+                android:padding="4dp"
+                android:shadowColor="@color/black_full"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="@string/txt_burpple_exclusive"
+                android:textAllCaps="true"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular" />
+
+            <TextView
+                android:id="@+id/tv_burpple_promotion_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_burpple_exclusive"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:padding="4dp"
+                android:shadowColor="@color/black_full"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="1-for 1 Chilli Pomelo Crab Xiao Long Bao"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_heading_1x" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_burpple_promotion_title"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:background="@color/divider"
+                android:padding="@dimen/margin_medium" />
+
+            <TextView
+                android:id="@+id/tv_burpple_promotion_until"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/tv_burpple_promotion_title"
+                android:layout_below="@id/tv_burpple_promotion_title"
+                android:layout_marginTop="@dimen/margin_large"
+                android:padding="@dimen/margin_small"
+                android:shadowColor="@color/black_full"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Till 31st JAN '18"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular_2x" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper"
+            android:background="@drawable/bg_square_accent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <TextView
+                android:shadowColor="@color/black_full"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular_2x"
+                android:id="@+id/tv_burpple_promotion_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_52_sandwich_shack" />
+
+            <TextView
+                android:shadowColor="@color/black_full"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textColor="@color/white_full"
+                android:textSize="@dimen/text_regular"
+                android:id="@+id/tv_burpple_promotion_shop_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_burpple_promotion_shop_name"
+                android:text="@string/lbl_city_hall" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

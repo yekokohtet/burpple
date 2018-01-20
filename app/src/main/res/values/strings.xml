@@ -12,4 +12,21 @@
     <string name="lbl_explore_categories">Explore Categories</string>
     <string name="lbl_newly_opened">Newly Opened</string>
     <string name="lbl_trending_venues">Trending Venues</string>
+    <string name="msg_generic_no_food">No Food to Display</string>
+    <string name="lbl_refresh">Refresh</string>
+    <string name="lbl_popular">Popular</string>
+    <string name="lbl_you_can_also_try">You Can Also Try</string>
+    <string name="tv_cafes_and_coffee"><![CDATA[Cafes & Coffee]]></string>
+    <string name="lbl_nearby">Nearby</string>
+    <string name="lbl_nearby_hawker">Nearby Hawker</string>
+    <string name="lbl_japanese_in_orchard">Japanese in Orchard</string>
+    <string name="lbl_bugis_cafes">Bugis Cafes</string>
+    <string name="lbl_trending">Trending</string>
+    <string name="lbl_cafes_and_coffee"><![CDATA[Cafes & Coffee]]></string>
+    <string name="lbl_reservation">Reservation</string>
+    <string name="lbl_52_sandwich_shack">52 Sandwich Shack</string>
+    <string name="lbl_city_hall">City Hall</string>
+    <string name="lbl_tastemakers_guide_to_best_hawkers_in_chinatown">
+        Tastemakers Guide to Best Hawkers in Chinatown
+    </string>
 </resources>

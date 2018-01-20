@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fitsSystemWindows="true">
+
+                <EditText
+                    android:id="@+id/et_search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_medium_3"
+                    android:layout_marginStart="@dimen/margin_medium_3"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/bg_round_white"
+                    android:drawablePadding="@dimen/margin_small"
+                    android:drawableStart="@drawable/ic_search_gray_32dp"
+                    android:hint="Search e.g. Japanese in Orchard"
+                    android:padding="@dimen/margin_medium_2"
+                    android:textSize="20sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Popular"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_nearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Nearby"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_newly_opened"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Newly Opened"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_trending"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Trending"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_cafes_and_coffee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="@string/lbl_cafes_and_coffee"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_promotions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Promotions"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_reservation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="Reservation"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_you_try"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/lbl_you_can_also_try"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_nearby_hawker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="@string/lbl_nearby_hawker"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_japanese_in_orchard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="@string/lbl_japanese_in_orchard"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_bugis_cafes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_medium"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:text="@string/lbl_bugis_cafes"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/text_heading_1x"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@color/divider" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

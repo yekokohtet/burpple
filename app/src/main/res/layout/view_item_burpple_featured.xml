@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.burpple.viewitems.BurppleFeaturedViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_burpple_featured_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vp_2" />
+
+    <TextView
+        android:id="@+id/tv_burpple_featured_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:padding="@dimen/margin_large"
+        android:shadowColor="@color/black_full"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Have Some Cakes"
+        android:textColor="@color/white_full"
+        android:textSize="@dimen/text_heading_1x" />
+
+</com.padcmyanmar.burpple.viewitems.BurppleFeaturedViewItem>

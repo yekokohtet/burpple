@@ -47,12 +47,12 @@
                     android:textStyle="bold" />
 
                 <com.rd.PageIndicatorView
-                    android:layout_marginBottom="@dimen/margin_medium_3"
                     android:id="@+id/pageIndicatorView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_medium_3"
                     android:padding="@dimen/margin_large"
                     app:piv_animationType="worm"
                     app:piv_dynamicCount="true"
@@ -73,7 +73,7 @@
                 app:layout_collapseMode="pin">
 
                 <TextView
-                    android:id="@+id/search_box"
+                    android:id="@+id/tv_search_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_medium_3"
@@ -137,13 +137,24 @@
                     android:textColor="@color/primary"
                     android:textSize="@dimen/text_regular_2x" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_promotions"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/lbl_promotions"
-                    android:layout_marginTop="@dimen/margin_xlarge" />
+                    android:layout_below="@id/lbl_promotions">
 
+                    <com.padcmyanmar.burpple.components.SmartRecyclerView
+                        android:id="@+id/rv_promotions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xlarge" />
+
+                    <include
+                        android:id="@+id/vp_empty_promotions"
+                        layout="@layout/view_pod_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
 
             </RelativeLayout>
 
@@ -183,13 +194,24 @@
                     android:textColor="@color/primary"
                     android:textSize="@dimen/text_regular_2x" />
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_burpple_guides"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/lbl_burpple_guides"
-                    android:layout_marginTop="@dimen/margin_xlarge" />
+                    android:layout_below="@id/lbl_burpple_guides">
 
+                    <com.padcmyanmar.burpple.components.SmartRecyclerView
+                        android:id="@+id/rv_burpple_guides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xlarge" />
+
+                    <include
+                        android:id="@+id/vp_empty_guides"
+                        layout="@layout/view_pod_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
 
             </RelativeLayout>
 
@@ -226,7 +248,7 @@
 
                     <include
                         android:id="@+id/vp_new_trending"
-                        layout="@layout/view_pod_new_trending"
+                        layout="@layout/view_pod_newly_opened"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
